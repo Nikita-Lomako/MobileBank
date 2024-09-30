@@ -153,92 +153,92 @@ namespace MobileBank.Forms
                     if (cardCurrency == "BYN" && cardCurrency2 == "USD")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum /= dolar}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum / dolar}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "BYN" && cardCurrency2 == "EUR")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum /= euro}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum / euro}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "BYN" && cardCurrency2 == "RUB")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum /= rub}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum / rub}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "USD" && cardCurrency2 == "BYN")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= dolar}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * dolar}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "EUR" && cardCurrency2 == "BYN")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= euro}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * euro}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "RUB" && cardCurrency2 == "BYN")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= rub}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * rub}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "USD" && cardCurrency2 == "EUR")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (dolar / euro)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (dolar / euro)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "EUR" && cardCurrency2 == "USD")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (euro / dolar)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (euro / dolar)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "USD" && cardCurrency2 == "RUB")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (dolar / rub)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (dolar / rub)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "RUB" && cardCurrency2 == "USD")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (rub / dolar)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (rub / dolar)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "EUR" && cardCurrency2 == "RUB")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (euro / rub)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (euro / rub)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "RUB" && cardCurrency2 == "EUR")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (rub / euro)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (rub / euro)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "RUB" && cardCurrency2 == "USD")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (rub / dolar)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *(rub / dolar)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "USD" && cardCurrency2 == "RUB")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (dolar / rub)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (dolar / rub)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "EUR" && cardCurrency2 == "RUB")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (euro / rub)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (euro / rub)}' WHERE bank_card_number = '{destinationCard}'";
                     }
                     else if (cardCurrency == "RUB" && cardCurrency2 == "EUR")
                     {
                         queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
-                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum *= (rub / euro)}' WHERE bank_card_number = '{destinationCard}'";
+                        queryTransaction2 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance + '{sum * (rub / euro)}' WHERE bank_card_number = '{destinationCard}'";
                     }
 
-                    var queryTransaction3 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number, transaction_value)";
+                    //var queryTransaction3 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number, transaction_value)";
                     var command1 = new SqlCommand(queryTransaction1, database.GetConnection());
                     var command2 = new SqlCommand(queryTransaction2, database.GetConnection());
-                    var command3 = new SqlCommand(queryTransaction3, database.GetConnection());
+                    //var command3 = new SqlCommand(queryTransaction3, database.GetConnection());
                     database.OpenConnection();
                     command1.ExecuteNonQuery();
                     command2.ExecuteNonQuery();
-                    command3.ExecuteNonQuery();
+                    //command3.ExecuteNonQuery();
                     database.CloseConnection();
 
                     Close();
