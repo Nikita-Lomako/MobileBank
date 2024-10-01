@@ -156,5 +156,11 @@ namespace MobileBank.Forms
             CardsComboBox.Text = "";
             sendToForm.ShowDialog();
         }
+
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            UserForm userForm = new UserForm();
+            userForm.Show();
+        }
     }
 }
