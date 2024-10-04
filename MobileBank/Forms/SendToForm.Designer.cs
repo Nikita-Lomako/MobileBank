@@ -30,6 +30,8 @@
         {
             this.CloseButton = new System.Windows.Forms.Button();
             this.CardPanel = new System.Windows.Forms.Panel();
+            this.CardToTextBox = new System.Windows.Forms.TextBox();
+            this.CVVTextBox = new System.Windows.Forms.TextBox();
             this.CardTextBox = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.NamePanel = new System.Windows.Forms.Panel();
@@ -47,8 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SendButton = new System.Windows.Forms.Button();
-            this.CVVTextBox = new System.Windows.Forms.TextBox();
-            this.CardToTextBox = new System.Windows.Forms.TextBox();
             this.CardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -84,6 +84,32 @@
             this.CardPanel.Name = "CardPanel";
             this.CardPanel.Size = new System.Drawing.Size(460, 177);
             this.CardPanel.TabIndex = 113;
+            // 
+            // CardToTextBox
+            // 
+            this.CardToTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.CardToTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CardToTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CardToTextBox.ForeColor = System.Drawing.Color.White;
+            this.CardToTextBox.Location = new System.Drawing.Point(14, 122);
+            this.CardToTextBox.Name = "CardToTextBox";
+            this.CardToTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CardToTextBox.Size = new System.Drawing.Size(61, 23);
+            this.CardToTextBox.TabIndex = 127;
+            this.CardToTextBox.Text = "07/24";
+            // 
+            // CVVTextBox
+            // 
+            this.CVVTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.CVVTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CVVTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CVVTextBox.ForeColor = System.Drawing.Color.White;
+            this.CVVTextBox.Location = new System.Drawing.Point(208, 122);
+            this.CVVTextBox.Name = "CVVTextBox";
+            this.CVVTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CVVTextBox.Size = new System.Drawing.Size(43, 23);
+            this.CVVTextBox.TabIndex = 126;
+            this.CVVTextBox.Text = "***";
             // 
             // CardTextBox
             // 
@@ -212,7 +238,7 @@
             this.SumTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SumTextBox.Size = new System.Drawing.Size(71, 23);
             this.SumTextBox.TabIndex = 98;
-            this.SumTextBox.Text = "00.00";
+            this.SumTextBox.Text = "0,00";
             // 
             // panel4
             // 
@@ -271,32 +297,6 @@
             this.SendButton.Text = "Перевести";
             this.SendButton.UseVisualStyleBackColor = false;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
-            // 
-            // CVVTextBox
-            // 
-            this.CVVTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.CVVTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CVVTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CVVTextBox.ForeColor = System.Drawing.Color.White;
-            this.CVVTextBox.Location = new System.Drawing.Point(208, 122);
-            this.CVVTextBox.Name = "CVVTextBox";
-            this.CVVTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CVVTextBox.Size = new System.Drawing.Size(43, 23);
-            this.CVVTextBox.TabIndex = 126;
-            this.CVVTextBox.Text = "***";
-            // 
-            // CardToTextBox
-            // 
-            this.CardToTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.CardToTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CardToTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CardToTextBox.ForeColor = System.Drawing.Color.White;
-            this.CardToTextBox.Location = new System.Drawing.Point(14, 122);
-            this.CardToTextBox.Name = "CardToTextBox";
-            this.CardToTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CardToTextBox.Size = new System.Drawing.Size(61, 23);
-            this.CardToTextBox.TabIndex = 127;
-            this.CardToTextBox.Text = "07/24";
             // 
             // SendToForm
             // 
