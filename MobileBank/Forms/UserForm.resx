@@ -121,7 +121,7 @@
   <data name="ProfilePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAQjlJREFUeF7t3Qe8VEW27/FLzhkkYyaJgqiIIkYQE0oUs6MgchUvApIc9eIoI+jF
+        cQAAEnEB89x6jgAAQjlJREFUeF7t3Qe8VEW27/FLzhkkYyaJgqiIIkYQE0oUs6MgchUvApIc9eIoI+jF
         +aCCCCIIishFRIEBxYSgIEEkiM4gBiTnnA/13tq3DqKuAyd0967a+/f/fL6fO2+eY6/qs8Pq7l1V/3He
         eecZAAAQLzQAAADEEA0AAAAxRAMAAEAM0QAAABBDNAAAAMQQDQAAADFEAwAAQAzRAAAAEEM0AAAAxBAN
         AAAAMUQDAABADNEAAAAQQzQAAADEEA0AAAAxRAMAAEAM0QAAABBDNAAAAMQQDQAAADFEAwAAQAzRAAAA
@@ -7474,7 +7474,7 @@
   <data name="AnotherProfilePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAbFhJREFUeF7tnQeYFMX29lEByTmDAgooIvIHBEmCBJEkIlmSIAooeJUMiohks4gi
+        cgAAEnIBXmVb4wAAbFhJREFUeF7tnQeYFMX29lEByTmDAgooIvIHBEmCBJEkIlmSIAooeJUMiohks4gi
         mEGCBBFFUbIoQckgSURyzjljfd/bt5a7wNndmdmZqeru932e33Mv6+7MqdDdp6vqnJPk//7v/xQhxF6S
         JUumcuXK5fz/6tWrq8aNG6t27dqpnj17qiFDhqiPPvpITZgwQX333Xdq9uzZasmSJWr58uVqy5Ytavv2
         7ero0aPXcPnyZXW98LPrfw9/+/fffzuftXjxYuez8R3jx49XI0aMUIMHD1Y9evRwbGnUqJF6+OGHVbFi
@@ -7942,7 +7942,7 @@
   <data name="SettingsPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAKOtJREFUeF7tnQmQbNd51ztgg5ADgyIIKARPEBCEgBpALCHIDEtMiSLOEAMKBQ5D
+        EAAACxABrSO9dQAAKOtJREFUeF7tnQmQbNd51ztgg5ADgyIIKARPEBCEgBpALCHIDEtMiSLOEAMKBQ5D
         sdlQkIkTEuJgasAFLiBYo8W7LI9sy5JsSR5Zqy3paSRZRpYteWwpXiLHbu+WtfXbV0mX/+/OPf1Onzm9
         39t9bvf3Vf3qvenl3u8s/+9859xzbzfMzMzMzMzMzMxmwbJ7GytiXWyJ7YIdkQ1IU7jvwYbgeGtisTiN
         mZlZSiZxInzEGxN1mRAUlorTmpmZTdskSEbpmFiroiVWi9ObmZlNyyREUvOYSLMX7zsze+HhC7Lnd149

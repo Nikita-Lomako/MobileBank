@@ -48,12 +48,27 @@ namespace MobileBank.Forms
             MessageBoxIcon ico = MessageBoxIcon.Information;
             string caption = "Дата сохранения";
 
-            if (!Regex.IsMatch(NumberTextBox.Text, "^[+][3][7][5][0-9]{7,14}$"))
+            if (!Regex.IsMatch(NumberTextBox.Text, "^[+][3][7][5][0-9]{8,13}$"))
             {
                 MessageBox.Show("Пожалуйста, введите новый номер телефона",caption,btn,ico);
                 NumberTextBox.Select();
                 return;
             }
+
+            var phoneNumber = NumberTextBox.Text;
+            var changeNumQuery = $"update client set client_phone_number = '{phoneNumber}' where id_client = '{DataStorage.idClient}'";
+            var command = new SqlCommand(changeNumQuery,database.GetConnection());
+            database.OpenConnection();
+            if(command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Номер телефона успешно изменен!");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Ошибка!");
+            }
+            database.CloseConnection();
         }
     }
 }

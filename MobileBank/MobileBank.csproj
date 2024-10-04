@@ -113,6 +113,12 @@
     <EmbeddedResource Include="Forms\AddBankCard.resx">
       <DependentUpon>AddBankCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeEmail.resx">
+      <DependentUpon>ChangeEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChangePhoneNumber.resx">
       <DependentUpon>ChangePhoneNumber.cs</DependentUpon>
     </EmbeddedResource>

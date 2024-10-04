@@ -121,9 +121,8 @@
             this.MailLabel.ForeColor = System.Drawing.Color.White;
             this.MailLabel.Location = new System.Drawing.Point(95, 234);
             this.MailLabel.Name = "MailLabel";
-            this.MailLabel.Size = new System.Drawing.Size(58, 22);
+            this.MailLabel.Size = new System.Drawing.Size(0, 22);
             this.MailLabel.TabIndex = 139;
-            this.MailLabel.Text = "label5";
             // 
             // PhoneLabel
             // 
@@ -132,9 +131,8 @@
             this.PhoneLabel.ForeColor = System.Drawing.Color.White;
             this.PhoneLabel.Location = new System.Drawing.Point(95, 155);
             this.PhoneLabel.Name = "PhoneLabel";
-            this.PhoneLabel.Size = new System.Drawing.Size(58, 22);
+            this.PhoneLabel.Size = new System.Drawing.Size(0, 22);
             this.PhoneLabel.TabIndex = 138;
-            this.PhoneLabel.Text = "label4";
             // 
             // FIOLabel
             // 
@@ -143,9 +141,8 @@
             this.FIOLabel.ForeColor = System.Drawing.Color.White;
             this.FIOLabel.Location = new System.Drawing.Point(95, 90);
             this.FIOLabel.Name = "FIOLabel";
-            this.FIOLabel.Size = new System.Drawing.Size(58, 22);
+            this.FIOLabel.Size = new System.Drawing.Size(0, 22);
             this.FIOLabel.TabIndex = 137;
-            this.FIOLabel.Text = "label3";
             // 
             // Label5
             // 
