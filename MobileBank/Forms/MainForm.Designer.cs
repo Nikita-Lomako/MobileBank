@@ -34,7 +34,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.CloseButton = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.TransactionsPictureBox = new System.Windows.Forms.PictureBox();
             this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
             this.CardsComboBox = new System.Windows.Forms.ComboBox();
             this.AddButton = new System.Windows.Forms.Button();
@@ -48,24 +48,24 @@
             this.PayButton = new System.Windows.Forms.Button();
             this.CreditCardPictureBox = new System.Windows.Forms.PictureBox();
             this.CardTextBox = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CommunalButton = new System.Windows.Forms.Button();
+            this.MilitaryButton = new System.Windows.Forms.Button();
             this.PhonePanel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.PhoneButton = new System.Windows.Forms.Button();
             this.FlagPictureBox = new System.Windows.Forms.PictureBox();
             this.PhonePictureBox = new System.Windows.Forms.PictureBox();
             this.PhoneTextBox = new System.Windows.Forms.TextBox();
             this.InternetPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.InternetButton = new System.Windows.Forms.Button();
             this.InternetPictureBox = new System.Windows.Forms.PictureBox();
             this.CreditPanel = new System.Windows.Forms.Panel();
             this.CreditLabel = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.CreditButton = new System.Windows.Forms.Button();
             this.CreditPictureBox = new System.Windows.Forms.PictureBox();
             this.CommunalPanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransactionsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VisaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MasterCardPictureBox)).BeginInit();
@@ -113,7 +113,7 @@
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.CloseButton);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.TransactionsPictureBox);
             this.panel2.Controls.Add(this.ProfilePictureBox);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -163,15 +163,17 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // TransactionsPictureBox
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(67, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 60);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.TransactionsPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransactionsPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("TransactionsPictureBox.Image")));
+            this.TransactionsPictureBox.Location = new System.Drawing.Point(67, 0);
+            this.TransactionsPictureBox.Name = "TransactionsPictureBox";
+            this.TransactionsPictureBox.Size = new System.Drawing.Size(67, 60);
+            this.TransactionsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TransactionsPictureBox.TabIndex = 3;
+            this.TransactionsPictureBox.TabStop = false;
+            this.TransactionsPictureBox.Click += new System.EventHandler(this.TransactionsPictureBox_Click);
             // 
             // ProfilePictureBox
             // 
@@ -325,31 +327,31 @@
             this.CardTextBox.Size = new System.Drawing.Size(312, 27);
             this.CardTextBox.TabIndex = 96;
             // 
-            // button3
+            // CommunalButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(350, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 38);
-            this.button3.TabIndex = 104;
-            this.button3.Text = ">";
-            this.button3.UseVisualStyleBackColor = false;
+            this.CommunalButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CommunalButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CommunalButton.FlatAppearance.BorderSize = 0;
+            this.CommunalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CommunalButton.Location = new System.Drawing.Point(350, 24);
+            this.CommunalButton.Name = "CommunalButton";
+            this.CommunalButton.Size = new System.Drawing.Size(39, 38);
+            this.CommunalButton.TabIndex = 104;
+            this.CommunalButton.Text = ">";
+            this.CommunalButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // MilitaryButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(350, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 38);
-            this.button2.TabIndex = 103;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = false;
+            this.MilitaryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.MilitaryButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MilitaryButton.FlatAppearance.BorderSize = 0;
+            this.MilitaryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MilitaryButton.Location = new System.Drawing.Point(350, 17);
+            this.MilitaryButton.Name = "MilitaryButton";
+            this.MilitaryButton.Size = new System.Drawing.Size(39, 38);
+            this.MilitaryButton.TabIndex = 103;
+            this.MilitaryButton.Text = ">";
+            this.MilitaryButton.UseVisualStyleBackColor = false;
             // 
             // PhonePanel
             // 
@@ -358,7 +360,7 @@
             this.PhonePanel.Controls.Add(this.label5);
             this.PhonePanel.Controls.Add(this.panel1);
             this.PhonePanel.Controls.Add(this.label2);
-            this.PhonePanel.Controls.Add(this.button4);
+            this.PhonePanel.Controls.Add(this.PhoneButton);
             this.PhonePanel.Controls.Add(this.FlagPictureBox);
             this.PhonePanel.Controls.Add(this.PhonePictureBox);
             this.PhonePanel.Controls.Add(this.PhoneTextBox);
@@ -407,18 +409,19 @@
             this.label2.TabIndex = 108;
             this.label2.Text = "Пополнение мобильного";
             // 
-            // button4
+            // PhoneButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(348, 58);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 38);
-            this.button4.TabIndex = 105;
-            this.button4.Text = ">";
-            this.button4.UseVisualStyleBackColor = false;
+            this.PhoneButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.PhoneButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PhoneButton.FlatAppearance.BorderSize = 0;
+            this.PhoneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PhoneButton.Location = new System.Drawing.Point(348, 58);
+            this.PhoneButton.Name = "PhoneButton";
+            this.PhoneButton.Size = new System.Drawing.Size(39, 38);
+            this.PhoneButton.TabIndex = 105;
+            this.PhoneButton.Text = ">";
+            this.PhoneButton.UseVisualStyleBackColor = false;
+            this.PhoneButton.Click += new System.EventHandler(this.PhoneButton_Click);
             // 
             // FlagPictureBox
             // 
@@ -455,7 +458,7 @@
             // 
             this.InternetPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.InternetPanel.Controls.Add(this.label1);
-            this.InternetPanel.Controls.Add(this.button6);
+            this.InternetPanel.Controls.Add(this.InternetButton);
             this.InternetPanel.Controls.Add(this.InternetPictureBox);
             this.InternetPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InternetPanel.Location = new System.Drawing.Point(465, 631);
@@ -473,18 +476,18 @@
             this.label1.TabIndex = 108;
             this.label1.Text = "Интернет и ТВ";
             // 
-            // button6
+            // InternetButton
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(348, 30);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 38);
-            this.button6.TabIndex = 105;
-            this.button6.Text = ">";
-            this.button6.UseVisualStyleBackColor = false;
+            this.InternetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.InternetButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InternetButton.FlatAppearance.BorderSize = 0;
+            this.InternetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InternetButton.Location = new System.Drawing.Point(348, 30);
+            this.InternetButton.Name = "InternetButton";
+            this.InternetButton.Size = new System.Drawing.Size(39, 38);
+            this.InternetButton.TabIndex = 105;
+            this.InternetButton.Text = ">";
+            this.InternetButton.UseVisualStyleBackColor = false;
             // 
             // InternetPictureBox
             // 
@@ -500,7 +503,7 @@
             // 
             this.CreditPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.CreditPanel.Controls.Add(this.CreditLabel);
-            this.CreditPanel.Controls.Add(this.button5);
+            this.CreditPanel.Controls.Add(this.CreditButton);
             this.CreditPanel.Controls.Add(this.CreditPictureBox);
             this.CreditPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CreditPanel.Location = new System.Drawing.Point(465, 735);
@@ -518,18 +521,18 @@
             this.CreditLabel.TabIndex = 108;
             this.CreditLabel.Text = "Кредит";
             // 
-            // button5
+            // CreditButton
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(348, 17);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 38);
-            this.button5.TabIndex = 106;
-            this.button5.Text = ">";
-            this.button5.UseVisualStyleBackColor = false;
+            this.CreditButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CreditButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreditButton.FlatAppearance.BorderSize = 0;
+            this.CreditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CreditButton.Location = new System.Drawing.Point(348, 17);
+            this.CreditButton.Name = "CreditButton";
+            this.CreditButton.Size = new System.Drawing.Size(39, 38);
+            this.CreditButton.TabIndex = 106;
+            this.CreditButton.Text = ">";
+            this.CreditButton.UseVisualStyleBackColor = false;
             // 
             // CreditPictureBox
             // 
@@ -545,7 +548,7 @@
             // 
             this.CommunalPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.CommunalPanel.Controls.Add(this.label4);
-            this.CommunalPanel.Controls.Add(this.button3);
+            this.CommunalPanel.Controls.Add(this.CommunalButton);
             this.CommunalPanel.Controls.Add(this.CommunalPictureBox);
             this.CommunalPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CommunalPanel.Location = new System.Drawing.Point(39, 631);
@@ -577,7 +580,7 @@
             // 
             this.MilitaryPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.MilitaryPanel.Controls.Add(this.MilitaryLabel);
-            this.MilitaryPanel.Controls.Add(this.button2);
+            this.MilitaryPanel.Controls.Add(this.MilitaryButton);
             this.MilitaryPanel.Controls.Add(this.MilitaryPictureBox);
             this.MilitaryPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MilitaryPanel.Location = new System.Drawing.Point(39, 735);
@@ -730,7 +733,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransactionsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VisaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MasterCardPictureBox)).EndInit();
@@ -765,7 +768,7 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox TransactionsPictureBox;
         private System.Windows.Forms.PictureBox ProfilePictureBox;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -790,11 +793,11 @@
         private System.Windows.Forms.PictureBox CommunalPictureBox;
         private System.Windows.Forms.PictureBox MilitaryPictureBox;
         private System.Windows.Forms.Button PayButton;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button CommunalButton;
+        private System.Windows.Forms.Button MilitaryButton;
+        private System.Windows.Forms.Button PhoneButton;
+        private System.Windows.Forms.Button CreditButton;
+        private System.Windows.Forms.Button InternetButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

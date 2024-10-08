@@ -96,7 +96,7 @@
             this.CardToTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.CardToTextBox.Size = new System.Drawing.Size(61, 23);
             this.CardToTextBox.TabIndex = 127;
-            this.CardToTextBox.Text = "07/24";
+            this.CardToTextBox.Text = "7/24";
             // 
             // CVVTextBox
             // 

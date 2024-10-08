@@ -65,7 +65,7 @@ namespace MobileBank.Forms
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
@@ -102,10 +102,7 @@ namespace MobileBank.Forms
 
                     MainForm mainForm = new MainForm();
                     mainForm.ShowDialog();
-                    mainForm = null;
-
-                    Show();
-                    PhoneNumbertextBox.Select();
+                    this.Close();
                 }
                 else
                 {

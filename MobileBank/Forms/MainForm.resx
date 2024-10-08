@@ -215,7 +215,7 @@
         j+Eb/wfe2AMOz5VMeAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TransactionsPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
         cQAAEnEB89x6jgAAOC1JREFUeF7t3emTFlWauP+mQPZdVtkEKUdZG9wAN1yrAbEFZBNcENsFbQsbYRAR
@@ -1374,7 +1374,7 @@
   <data name="MasterCardPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAmwAAAGQCAYAAAATLTzaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAnYVJREFUeF7t3QWYVGX/xnEUBaQbBEHpUBAF67UDW0kpFZsWUBFFukG6u7sWtpfO
+        DAAACwwBP0AiyAAAnYVJREFUeF7t3QWYVGX/xnEUBaQbBEHpUBAF67UDW0kpFZsWUBFFukG6u7sWtpfO
         pbu7u2tpuP+/33PO2T07zO6Cf8RZ9ua6Ptf07OzMvu98fc45z5No4qzDV4iIiIjovzdJT2cevjIm9NDl
         0aGHrvgvOHZz6aYzSPRbm0kgIiIiov9exW8boMI3DVDuq/rGNzVaoP/o+Uj03seVQERERES+qfzX9Rhs
         RERERL6OwUZERETk4xhsRERERD6OwUZERETk4xhsRERERD6OwUZERETk4xhsRERERD6OwUZERETk4xhs

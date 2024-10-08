@@ -184,19 +184,21 @@ namespace MobileBank.Forms
                     // SQL-запросы на изменение балансов
                     var queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{sum}' WHERE bank_card_number = '{cardNumber}'";
                     var queryTransaction2 = $"UPDATE bank_card SET bank_card_balance =  '{total.ToString(CultureInfo.InvariantCulture)}' WHERE bank_card_number = '{destinationCard}'";
+                    var queryTransaction3 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number, transaction_value, id_bank_card) values('Перевод','{destinationCard}','{transactionDate}','{transactionNumber}','{sum}', (select id_bank_card from bank_card where bank_card_number = '{cardNumber}'))";
 
                     SqlCommand command1 = new SqlCommand(queryTransaction1, database.GetConnection());
                     SqlCommand command2 = new SqlCommand(queryTransaction2, database.GetConnection());
+                    SqlCommand command3 = new SqlCommand(queryTransaction3, database.GetConnection());
 
                     database.OpenConnection();
                     command1.ExecuteNonQuery();
                     command2.ExecuteNonQuery();
+                    command3.ExecuteNonQuery();
                     database.CloseConnection();
-                }
-                //var queryTransaction3 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number, transaction_value)";                   
-                //var command3 = new SqlCommand(queryTransaction3, database.GetConnection());                    
-                //command3.ExecuteNonQuery();
-                Close();
+
+                    Close();
+                }                                                                                    
+                
             }
         }
     }

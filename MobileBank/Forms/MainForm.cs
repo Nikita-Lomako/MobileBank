@@ -162,5 +162,20 @@ namespace MobileBank.Forms
             UserForm userForm = new UserForm();
             userForm.Show();
         }
+
+        private void TransactionsPictureBox_Click(object sender, EventArgs e)
+        {
+            History history = new History();
+            history.ShowDialog();
+        }
+
+        private void PhoneButton_Click(object sender, EventArgs e)
+        {
+            PhoneForm phoneForm = new PhoneForm();
+            DataStorage.cardNumber = CardsComboBox.GetItemText(CardsComboBox.SelectedItem);
+            DataStorage.phoneNumber = PhoneTextBox.Text;
+            PhoneTextBox.Text = "";
+            phoneForm.Show();
+        }
     }
 }
