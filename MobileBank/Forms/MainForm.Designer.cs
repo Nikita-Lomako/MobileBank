@@ -339,6 +339,7 @@
             this.CommunalButton.TabIndex = 104;
             this.CommunalButton.Text = ">";
             this.CommunalButton.UseVisualStyleBackColor = false;
+            this.CommunalButton.Click += new System.EventHandler(this.CommunalButton_Click);
             // 
             // MilitaryButton
             // 

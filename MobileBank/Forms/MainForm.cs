@@ -177,5 +177,12 @@ namespace MobileBank.Forms
             PhoneTextBox.Text = "";
             phoneForm.Show();
         }
+
+        private void CommunalButton_Click(object sender, EventArgs e)
+        {
+            CommunalPayments communalPayments = new CommunalPayments();
+            DataStorage.cardNumber = CardsComboBox.GetItemText(CardsComboBox.SelectedItem);
+            communalPayments.Show();
+        }
     }
 }
