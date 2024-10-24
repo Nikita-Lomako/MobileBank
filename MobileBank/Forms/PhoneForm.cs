@@ -34,7 +34,7 @@ namespace MobileBank.Forms
             InitializeComponent();
 
             System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
-            customCulture.NumberFormat.NumberDecimalSeparator = ",";
+            customCulture.NumberFormat.NumberDecimalSeparator = ".";
             System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
         }
 
@@ -191,9 +191,9 @@ namespace MobileBank.Forms
                             transactionNumber += Convert.ToString(rand.Next(0, 10));
                         }
 
-                        var queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{totalSum}' WHERE bank_card_number = '{cardNumber}'";
-                        var queryTransaction2 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number, transaction_value, id_bank_card) values('Пополнение мобильного','+375{phoneNumber}','{transactionDate}','{transactionNumber}','{totalSum}', (select id_bank_card from bank_card where bank_card_number = '{cardNumber}'))";
-                        var queryTransaction3 = $"update clientServices set serviceBalance = serviceBalance + '{sum}' where serviceName = '{ComboBoxOperator.GetItemText(ComboBoxOperator.SelectedItem)}' and serviceType = 'Mobile'";
+                        var queryTransaction1 = $"UPDATE bank_card SET bank_card_balance = bank_card_balance - '{totalSum.ToString(CultureInfo.InvariantCulture)}' WHERE bank_card_number = '{cardNumber}'";
+                        var queryTransaction2 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number, transaction_value, id_bank_card) values('Пополнение мобильного','+375{phoneNumber}','{transactionDate}','{transactionNumber}','{totalSum.ToString(CultureInfo.InvariantCulture)}', (select id_bank_card from bank_card where bank_card_number = '{cardNumber}'))";
+                        var queryTransaction3 = $"update clientServices set serviceBalance = serviceBalance + '{sum.ToString(CultureInfo.InvariantCulture)}' where serviceName = '{ComboBoxOperator.GetItemText(ComboBoxOperator.SelectedItem)}' and serviceType = 'Mobile'";
 
                         SqlCommand command1 = new SqlCommand(queryTransaction1, database.GetConnection());
                         SqlCommand command2 = new SqlCommand(queryTransaction2, database.GetConnection());
@@ -226,7 +226,7 @@ namespace MobileBank.Forms
             {
                 double sum = Convert.ToDouble(SumTextBox.Text);
                 CommisionLabel.Text = Convert.ToString((sum * 2) / 100);
-                TotalSumLabel.Text = Convert.ToString((sum * 2) / 100) + sum;
+                TotalSumLabel.Text = Convert.ToString((sum * 2) / 100 + sum);
             }
         }
     }

@@ -54,6 +54,12 @@
     <Compile Include="Forms\AddBankCard.Designer.cs">
       <DependentUpon>AddBankCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ArmyHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArmyHelp.Designer.cs">
+      <DependentUpon>ArmyHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ChangeEmail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +84,23 @@
     <Compile Include="Forms\CommunalPayments.Designer.cs">
       <DependentUpon>CommunalPayments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Credit.Designer.cs">
+      <DependentUpon>Credit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\History.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InternetAndTvPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InternetAndTvPayments.Designer.cs">
+      <DependentUpon>InternetAndTvPayments.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -131,6 +149,9 @@
     <EmbeddedResource Include="Forms\AddBankCard.resx">
       <DependentUpon>AddBankCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ArmyHelp.resx">
+      <DependentUpon>ArmyHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChangeEmail.resx">
       <DependentUpon>ChangeEmail.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,8 +164,14 @@
     <EmbeddedResource Include="Forms\CommunalPayments.resx">
       <DependentUpon>CommunalPayments.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Credit.resx">
+      <DependentUpon>Credit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\History.resx">
       <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InternetAndTvPayments.resx">
+      <DependentUpon>InternetAndTvPayments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

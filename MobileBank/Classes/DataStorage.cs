@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MobileBank.Classes
 {
-    internal class DataStorage
+    internal static class DataStorage
     {
         public static int attempts;
         public static string bankCard;

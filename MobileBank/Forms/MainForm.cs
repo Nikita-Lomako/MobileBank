@@ -184,5 +184,42 @@ namespace MobileBank.Forms
             DataStorage.cardNumber = CardsComboBox.GetItemText(CardsComboBox.SelectedItem);
             communalPayments.Show();
         }
+
+        private void InternetButton_Click(object sender, EventArgs e)
+        {
+            InternetAndTvPayments internetAndTvPayments = new InternetAndTvPayments();
+            DataStorage.cardNumber = CardsComboBox.GetItemText(CardsComboBox.SelectedItem);
+            internetAndTvPayments.Show();
+        }
+
+        private void MilitaryButton_Click(object sender, EventArgs e)
+        {
+            ArmyHelp armyHelp = new ArmyHelp();
+            DataStorage.cardNumber = CardsComboBox.GetItemText(CardsComboBox.SelectedItem);
+            armyHelp.Show();
+        }
+
+        private void CreditButton_Click(object sender, EventArgs e)
+        {
+            DataStorage.cardNumber = CardsComboBox.GetItemText(CardsComboBox.SelectedItem);
+            var cardCurrency = "";
+            var queryCheckCurrency = $"select bank_card_currency from bank_card where bank_card_number = '{DataStorage.cardNumber}'";
+            SqlCommand commandCheckCurrency = new SqlCommand(queryCheckCurrency, database.GetConnection());
+            SqlDataReader reader = commandCheckCurrency.ExecuteReader();
+            while (reader.Read())
+            {
+                cardCurrency = reader[0].ToString();
+            }
+            reader.Close();
+            if (cardCurrency == "BYN")
+            {
+                Credit credit = new Credit();
+                credit.Show();
+            }
+            else            
+                MessageBox.Show("Операции с кредитом могут проводиться только в белорусских рублях", "Отказ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            
+        }
     }
 }

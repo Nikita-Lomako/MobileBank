@@ -353,6 +353,7 @@
             this.MilitaryButton.TabIndex = 103;
             this.MilitaryButton.Text = ">";
             this.MilitaryButton.UseVisualStyleBackColor = false;
+            this.MilitaryButton.Click += new System.EventHandler(this.MilitaryButton_Click);
             // 
             // PhonePanel
             // 
@@ -489,6 +490,7 @@
             this.InternetButton.TabIndex = 105;
             this.InternetButton.Text = ">";
             this.InternetButton.UseVisualStyleBackColor = false;
+            this.InternetButton.Click += new System.EventHandler(this.InternetButton_Click);
             // 
             // InternetPictureBox
             // 
@@ -534,6 +536,7 @@
             this.CreditButton.TabIndex = 106;
             this.CreditButton.Text = ">";
             this.CreditButton.UseVisualStyleBackColor = false;
+            this.CreditButton.Click += new System.EventHandler(this.CreditButton_Click);
             // 
             // CreditPictureBox
             // 
